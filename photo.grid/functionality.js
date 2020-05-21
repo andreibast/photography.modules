@@ -6,6 +6,7 @@ $(document).ready(function(){
             
             setTimeout(function(){ 
                 $(".clothes_item").removeClass("hide");
+                $("div[style*=none]").css({'display' : ''});
             }, 1000);
                
         }else{
@@ -15,6 +16,7 @@ $(document).ready(function(){
                 $("div[style*=none]").css({'display' : ''}); 
                 $("div .hide").css("display", "none"); 
             }, 1000);
+            
         }   
     })
 })
