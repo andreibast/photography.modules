@@ -16,7 +16,12 @@
     
 }
 
-.hide{/*here is your decision on how you want the element to leave the page*/
+
+
+
+
+
+.hide{
     
     /*overflow: hidden;*/
 transform: scale(0);
@@ -25,9 +30,17 @@ transform: scale(0);
     padding: 0;
 */
 /*    overflow-x: hidden;*/
-    display:none;
+      
     
-    transition: all 0.4s ease-in-out; 
+/*    transition: all 0.4s ease-in-out; */
+}
+
+.test-hide{
+    display:none;
+}
+
+.test-show{
+    display:block;
 }
 
 

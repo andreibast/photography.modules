@@ -1,23 +1,29 @@
 $(document).ready(function(){
     $(".category_item").click(function(){
-        var category = $(this).attr("id"); //"put in this variable the id of the item when i click on it"
+        var category = $(this).attr("id");
         
         if(category == "all"){
-            $(".clothes_item").addClass("hide pictures-container-grid"); //"into the clothes item selected, add me the hide class, which has the CSS properties already made"
-            setTimeout(function(){ //this is to get our pictures back with transition
+            $(".clothes_item").addClass("hide"); 
+            setTimeout(function(){ 
                 $(".clothes_item").removeClass("hide");
             }, 300);
-            
-    
-            
+               
         }else{
-            $(".clothes_item").addClass("hide pictures-container-grid");
+            $(".clothes_item").addClass("hide");
+            
             setTimeout(function(){ 
                 $("." + category).removeClass("hide");
+                
             }, 300);
             
+            var hideClass= $(".clothes_item").hasClass("hide");
+            alert("the result is: " + hideClass.toString());
             
+            if(hideClass==true){
+                $(".hide").css("display", "none");
+                //$(".clothes_item").css("display", "none");
+            }
+
         }
-        
     })
 })
