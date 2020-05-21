@@ -1,0 +1,81 @@
+
+.pictures-container-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    
+}
+
+.category_container{
+
+/*
+    display: block;
+    margin: 0 auto;
+*/
+
+    
+}
+
+.hide{/*here is your decision on how you want the element to leave the page*/
+    
+    /*overflow: hidden;*/
+transform: scale(0);
+/*
+    width: 0;
+    padding: 0;
+*/
+/*    overflow-x: hidden;*/
+    display:none;
+    
+    transition: all 0.4s ease-in-out; 
+}
+
+
+.category_item{
+    float:left;
+    width: 15%;
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+}
+
+.category_item:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
+.zone {
+    cursor:pointer;
+    /* display:block; */
+    text-align: center;
+    font-size:10em;
+    border-radius: 15px;
+    /* border:1px solid #bbb; */
+    transition: all 0.3s linear;
+    /* max-height: 300px; */
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+    
+
+
+ .brown {
+    background: #f6e6b4; /* Old browsers */
+    background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* IE10+ */
+    background: linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* IE6-9 */
+}
